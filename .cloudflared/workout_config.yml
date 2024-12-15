@@ -1,0 +1,19 @@
+tunnel: 9cf25586-1994-4498-bee4-7129cfacd1d5
+credentials-file: .\.cloudflared\9cf25586-1994-4498-bee4-7129cfacd1d5.json
+
+ingress:
+  - hostname: workoutui.howardnmaeve.us
+    service: http://localhost:3000
+  - hostname: workout.howardnmaeve.us
+    service: http://localhost:8000
+  - hostname: ui.howardnmaeve.us
+    service: http://localhost:3000
+  # Example of a request mapping to the Hello World test server:
+  - hostname: "*.howardnmaeve.us"
+    service: hello_world
+  - service: hello_world
+  # - service: http_status:404
+
+
+
+

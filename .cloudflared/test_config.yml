@@ -1,0 +1,7 @@
+tunnel: 2d42643c-7641-4066-ab24-c6b78c323cd2
+credentials-file: .\.cloudflared\2d42643c-7641-4066-ab24-c6b78c323cd2.json
+
+ingress:
+  - hostname: test.howardnmaeve.us
+    service: hello_world
+  - service: http_status:404
